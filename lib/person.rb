@@ -27,14 +27,17 @@ class Person
                 num
         end
     end
-    def happy=(num)
-        @happiness = if num > 7
-            true
-        else false
-        end
-            
+    def happy?
+       @happiness > 7 ? true : false
+         
     end
-        
+    def clean?
+        @hygiene > 7 ? true : false
+    end
+    def get_paid(amount)
+        @bank_account += amount
+        return "all about the benjamins"
+    end
 
     
 
